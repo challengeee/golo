@@ -1,0 +1,56 @@
+{
+  "name": "@challengeee/golo",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc && vite build",
+    "format": "prettier --write ./src --cache",
+    "format:watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/challengeee/golo"
+  },
+  "keywords": [
+    "react",
+    "Go",
+    "Baduk",
+    "Weiqi",
+    "goban",
+    "Goban",
+    "gobo"
+  ],
+  "bugs": {
+    "url": "https://github.com/challengeee/golo/issues"
+  },
+  "license": "MIT",
+  "author": "ReiRev <reirev2913@gmail.com> (https://reirev.net)",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "onchange": "^7.1.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vite-plugin-dts": "^3.9.1",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "@types/seedrandom": "^3.0.8",
+    "seedrandom": "^3.0.5"
+  }
+}
