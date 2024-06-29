@@ -1,5 +1,6 @@
 {
   "name": "@challengeee/golo",
+  "description": "A Go Logic for JavaScript",
   "version": "0.1.0",
   "type": "module",
   "files": [
@@ -27,7 +28,6 @@
     "url": "git+https://github.com/challengeee/golo"
   },
   "keywords": [
-    "react",
     "Go",
     "Baduk",
     "Weiqi",
